@@ -14,9 +14,9 @@ function App() {
         setToDoList([...toDoList,toDo])
     }
     function getList(){
-        axios.get("/api/todo")
-            .then(response => response.data)
-            .then(data => setToDoList(data))
+        axios.get("/api/todo")      // axios.get holt immer .response.data von der API
+            .then(response => response.data)        // nach .get dann die response.data auspacken und .data rausholen
+            .then(data => setToDoList(data))        // dann die .data and setToDoList übergeben.
             .then(()=> console.log(toDoList))
             .catch(()=> console.log("Data fetching failed"))
 
