@@ -29,7 +29,7 @@ function App() {
     //Ausgabe auf dem Screen
   return (
     <div>
-      <Header onAddToDo = {addNewToDo}></Header>
+      <Header onAddToDo = {addNewToDo}/>
       <ToDoView/>
     </div>
   );
