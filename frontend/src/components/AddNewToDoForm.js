@@ -18,7 +18,7 @@ export default function AddNewToDoForm({onSubmit}){     // {{onSubmit}} ist die 
     return(
             <StyledToDoForm>
                 <label>Please enter description of your new To-Do:</label><br/>
-                <input onChange={event => setDescription(event.target.value)} type={"text"} value={description}/>
+                <input onChange={event => setDescription(event.target.value)} type={"text"} placeholder={description}/>
                 <input type={"button"} value={"Add ToDo Item"} onClick={postNewToDo}/>
             </StyledToDoForm>
     )
